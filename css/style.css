@@ -1,0 +1,30 @@
+#home{
+    text-align: center;
+    padding: 5%;
+}
+
+#home img{
+    width: 30%;
+    
+}
+
+.about-me{
+background-color: teal;
+color: white;
+
+}
+
+
+body{
+    text-align: center;
+    background-color: lightcyan;
+}
+
+p{
+    text-align: left;
+    padding: 1%;
+}
+
+.my-project{
+    background-color: lightskyblue;
+}
