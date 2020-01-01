@@ -5,57 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="./css/material.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Oktay Ibis Portfolio</title>
 </head>
 
 <body>
     <header id="home">
-        <img src="./images/header-back.jpg" alt="designer" width="90%">
-        <nav style="text-align: center;">
+       
+        <nav class="fixednav navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            
+            <a class="navbar-brand" href="#">Oktay Ibis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About Me</a>
+                    <a class="nav-item nav-link" href="#">My Projects</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#">Blog</a>
 
-            <section>
-                <a href="#aboutme">About me</a>
-                <strong>|</strong>
-                <a href="#myprojects">My Projects</a>
-                <strong>|</strong>
-                <a href="#contact">Contact</a>
-                <strong>|</strong>
-                <a href="#blog">Blog</a>
 
-
-            </section>
+                </div>
+            </div>
         </nav>
+        <div class="container">
+            <img src="./images/header-back.jpg" alt="designer" width="90%">
+        </div>
     </header>
 
-    <section id="aboutme" class="about-me">
-        <h2>About Me</h2>
-        <article>
-            <p>
-                I was born in Istanbul in 1987. I have been worked aviation security industry for 9 years.
-                I decided to be web developer, I start learning code and some desing tecnique. After I met Re:Coded
-                organizastion and joined thier bootcamp I worked many devolopment project as you can see below.
-            </p>
-        </article>
+    <section id="#aboutme" class="container shadow-sm p-3 mb-5 bg-white rounded">
+        <div>
+            <h2 class="display-4">About Me</h2>
+            <article>
+                <p>
+                    I was born in Istanbul in 1987. I have been worked aviation security industry for 9 years.
+                    I decided to be web developer, I start learning code and some desing tecnique. After I met Re:Coded
+                    organizastion and joined thier bootcamp I worked many devolopment project as you can see below.
+                    <a href="#" class="btn-link">learn more</a>
+                </p>
+            </article>
+        </div>
+
+    </section>
+    
+    <section id="#myprojects" class="container shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="card-title">My Projects</div>
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-header">Re:Coded Fellows</h3>
+                <p class="card-text"> My first project based HTML. It's so basic and beginner level project.</p>
+            </div>
+        </div>
 
     </section>
 
-    <section id="#myprojects" class="my-project">
-
-        <h2>My Projects</h2>
-
-        <article>
-            <h3 style="color:gray;"> Re:Coded Fellows</h3>
-            <p>
-                My first project based HTML. It's so basic and beginner level project.
-            </p>
-
-        </article>
-
-    </section>
-
-    <section id="contact" class="contact">
+    <section id="contact" class="container shadow-sm p-3 mb-5 bg-white rounded">
 
         <h2>Contact</h2>
 
@@ -69,17 +77,17 @@
                     <td><input type="text" name="name" placeholder="Your Name"></td>
                 </tr>
                 <tr>
-                    <td><label for="email" >Your Mail Address:</label></td>
+                    <td><label for="email">Your Mail Address:</label></td>
                     <td><input type="email" name="email" placeholder="mail@mail.com"></td>
                 </tr>
 
                 <tr>
                     <td><label for="textarea">Your message : </label></td>
-                    <td><input type="text" name="textarea" placeholder="Your message" ></td>
+                    <td><input type="text" name="textarea" placeholder="Your message"></td>
                 </tr>
 
                 <tr>
-                    <td><input type="button" value="Send" ></td>
+                    <td><input type="button" value="Send"></td>
                 </tr>
             </table>
 
@@ -89,7 +97,7 @@
     </section>
 
 
-    <section id="blog" class="blog"> 
+    <section id="blog" class="container shadow-sm p-3 mb-5 bg-white rounded">
 
         <h2>Blog</h2>
         <article>
@@ -99,7 +107,7 @@
     </section>
 
 
-    <footer>
+    <footer class="container shadow-sm p-3 mb-5 bg-white rounded">
         <h4>Find me --> at social</h4>
         <a href="#">
             <img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="instagram" width="5%">
