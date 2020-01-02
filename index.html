@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+     <script src="https://kit.fontawesome.com/bfca83f930.js" crossorigin="anonymous"></script>
     <title>Oktay Ibis Portfolio</title>
 </head>
 
@@ -64,7 +65,7 @@
               <p class="card-text">It was basic and beginner level project 
                   when I tried to learn HTML and CSS Basic Rules.
               </p>
-              <a href="#" class="btn btn-primary">Go Github</a>
+              <a href="#" class="btn btn-dark">Go Github</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -74,7 +75,7 @@
               <p class="card-text">This project still in development. I have been tried improve with my best!
 
               </p>
-              <a href="#" class="btn btn-primary">Go Github</a>
+              <a href="#" class="btn btn-dark">Go Github</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -84,7 +85,7 @@
               <p class="card-text">We desing this website for learn css library and princibles. We worked as a team with using 
                   github fuetures.
               </p>
-              <a href="https://github.com/oktayibis/why-we-coded" class="btn btn-primary">Go Github</a>
+              <a href="https://github.com/oktayibis/why-we-coded" class="btn btn-dark">Go Github</a>
             </div>
           </div>
        
@@ -99,54 +100,54 @@
         <h4>E-Mail Address</h4>
         <p><a href="mailto:oktayibis@gmail.com">oktayibis@gmail.com</a></p>
         <p>You may write about anything thay you like. I will try to back as soon as possible</p>
-        <form action="send">
-            <table>
-                <tr>
-                    <td><label for="name">Your name: </label> </td>
-                    <td><input type="text" name="name" placeholder="Your Name"></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Your Mail Address:</label></td>
-                    <td><input type="email" name="email" placeholder="mail@mail.com"></td>
-                </tr>
-
-                <tr>
-                    <td><label for="textarea">Your message : </label></td>
-                    <td><input type="text" name="textarea" placeholder="Your message"></td>
-                </tr>
-
-                <tr>
-                    <td><input type="button" value="Send"></td>
-                </tr>
-            </table>
-
-
-        </form>
-
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name ">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+          
+          
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary mb-2">Send</button>
+          </form>
     </section>
 
 
     <section id="blog" class="container shadow-sm p-3 mb-5 bg-white rounded">
-
-        <h2>Blog</h2>
-        <article>
-            <h4>How can you learn HTML from begining</h4>
-            <p>My first days with coding was very confising. </p>
-        </article>
+        <h1>Blog</h1>
+        <div class="jumbotron">
+            <h1 class="display-4">What are HTML and CSS</h1>
+            <p class="lead">
+                HTML and CSS very important topics for the people who want to be web developer. HTML means <span class="bg-info text-white">
+                    HyperText Markup Language</span> and CSS means <span class="bg-info text-white">Cascading Style Sheet</span>.
+            </p>
+            <hr class="my-4">
+            <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <a class="btn btn-secondary btn-lg" href="#" role="button">Read...</a>
+          </div>
     </section>
 
 
-    <footer class="container shadow-sm p-3 mb-5 bg-white rounded">
-        <h4>Find me --> at social</h4>
-        <a href="#">
-            <img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="instagram" width="5%">
-        </a>
-        <a href="#">
-            <img src="https://png.pngtree.com/element_our/sm/20180506/sm_5aeedf0005b7a.png" alt="facebook" width="5%">
-        </a>
-        <a href="#">
-            <img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" alt="twitter" width="5%">
-        </a>
+    <footer class="center-bar" >
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <p class="text-center text-muted">
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item"><a href="#"><i class="fab fa-facebook-square"></i>Facebook </a></li>
+                    <li class="list-group-item"><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
+                    <li class="list-group-item"> <a href="#"><i class="fab fa-github-square"></i> GitHub</a></li>
+                    <li class="list-group-item">  <a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                  </ul>
+
+            </p>
+          </nav>
+       
     </footer>
 </body>
 

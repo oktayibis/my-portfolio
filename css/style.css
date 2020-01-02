@@ -11,3 +11,10 @@
 .row{
     justify-content: space-around;
 }
+
+.center-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
